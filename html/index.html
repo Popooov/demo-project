@@ -57,7 +57,7 @@
                 
                 var a = location.search.split(";");
                 var o = a.reduce(function(o, v) {
-                    v = v.split("=");
+                    kv = v.split("=");
                     kv[0] = kv[0].replace("?", "");
                     o[kv[0]] = kv[1];
                     return o;
